@@ -30,7 +30,7 @@ app.use ((req,res) => {
  });
 
 //Conexion a Base de Datos
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL_EXTERNO)
 .then(() => {
     console.log("Conectado a la Base de Datos Exitosa")
 })

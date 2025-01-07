@@ -3,7 +3,7 @@ import Producto from "../model/modelProducto.js"
 
 
 export const getProducts = async () => {
-    const producto = await Producto.find();
+    const producto = await Producto.find({ishabilitado:true});
     return producto
 }
 
